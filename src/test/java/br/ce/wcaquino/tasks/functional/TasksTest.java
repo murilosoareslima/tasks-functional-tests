@@ -12,7 +12,7 @@ public class TasksTest {
 
 	public WebDriver acessarAplicacao() {
 		WebDriver driver = new ChromeDriver();
-		// abrir esse endereço
+		// abrir esse endereï¿½o
 		driver.navigate().to("http://localhost:8001/tasks/");
 
 		// aguardar 10 segudos
@@ -24,16 +24,16 @@ public class TasksTest {
 	public void deveSalvarTarefaComSucesso() {
 		WebDriver driver = acessarAplicacao();
 		try {
-			// encontrar o botão por id na página inicial e clicar
+			// encontrar o botï¿½o por id na pï¿½gina inicial e clicar
 			driver.findElement(By.id("addTodo")).click();
 
 			// encontrar primeiro campo para escrever
 			driver.findElement(By.id("task")).sendKeys("Teste via selenium");
 
 			// encontrar segundo campo para escrever
-			driver.findElement(By.id("dueDate")).sendKeys("10/01/2022");
+			driver.findElement(By.id("dueDate")).sendKeys("20/01/2022");
 
-			// clicar no botão salvar
+			// clicar no botï¿½o salvar
 			driver.findElement(By.id("saveButton")).click();
 
 			// validar a mensagem que aparece na tela
@@ -49,13 +49,13 @@ public class TasksTest {
 	public void naoDeveSalvarTarefaSemDescricao() {
 		WebDriver driver = acessarAplicacao();
 		try {
-			// encontrar o botão por id na página inicial e clicar
+			// encontrar o botï¿½o por id na pï¿½gina inicial e clicar
 			driver.findElement(By.id("addTodo")).click();
 
 			// encontrar segundo campo para escrever
-			driver.findElement(By.id("dueDate")).sendKeys("10/01/2022");
+			driver.findElement(By.id("dueDate")).sendKeys("20/01/2022");
 
-			// clicar no botão salvar
+			// clicar no botï¿½o salvar
 			driver.findElement(By.id("saveButton")).click();
 
 			// validar a mensagem que aparece na tela
@@ -71,13 +71,13 @@ public class TasksTest {
 	public void naoDeveSalvarTarefaSemData() {
 		WebDriver driver = acessarAplicacao();
 		try {
-			// encontrar o botão por id na página inicial e clicar
+			// encontrar o botï¿½o por id na pï¿½gina inicial e clicar
 			driver.findElement(By.id("addTodo")).click();
 
 			// encontrar primeiro campo para escrever
 			driver.findElement(By.id("task")).sendKeys("Teste via selenium");
 
-			// clicar no botão salvar
+			// clicar no botï¿½o salvar
 			driver.findElement(By.id("saveButton")).click();
 
 			// validar a mensagem que aparece na tela
@@ -93,7 +93,7 @@ public class TasksTest {
 	public void naoDeveSalvarTarefaComDataPassada() {
 		WebDriver driver = acessarAplicacao();
 		try {
-			// encontrar o botão por id na página inicial e clicar
+			// encontrar o botï¿½o por id na pï¿½gina inicial e clicar
 			driver.findElement(By.id("addTodo")).click();
 
 			// encontrar primeiro campo para escrever
@@ -102,7 +102,7 @@ public class TasksTest {
 			// encontrar segundo campo para escrever
 			driver.findElement(By.id("dueDate")).sendKeys("10/01/2021");
 
-			// clicar no botão salvar
+			// clicar no botï¿½o salvar
 			driver.findElement(By.id("saveButton")).click();
 
 			// validar a mensagem que aparece na tela
