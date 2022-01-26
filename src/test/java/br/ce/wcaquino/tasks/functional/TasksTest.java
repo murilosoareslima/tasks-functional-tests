@@ -31,7 +31,7 @@ public class TasksTest {
 			driver.findElement(By.id("task")).sendKeys("Teste via selenium");
 
 			// encontrar segundo campo para escrever
-			driver.findElement(By.id("dueDate")).sendKeys("20/01/2022");
+			driver.findElement(By.id("dueDate")).sendKeys("27/01/2022");
 
 			// clicar no bot�o salvar
 			driver.findElement(By.id("saveButton")).click();
@@ -53,7 +53,7 @@ public class TasksTest {
 			driver.findElement(By.id("addTodo")).click();
 
 			// encontrar segundo campo para escrever
-			driver.findElement(By.id("dueDate")).sendKeys("20/01/2022");
+			driver.findElement(By.id("dueDate")).sendKeys("27/01/2022");
 
 			// clicar no bot�o salvar
 			driver.findElement(By.id("saveButton")).click();
